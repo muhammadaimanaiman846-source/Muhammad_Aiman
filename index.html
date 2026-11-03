@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio Muhammad Aiman — UI/UX & Web Designer - Creative digital experiences crafted with precision and purpose." />
+  <meta name="keywords" content="UI/UX Designer, Web Designer, Portfolio, Digital Design, User Experience" />
+  <title>Muhammad Aiman — UI/UX & Web Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- PARTICLE CANVAS -->
+  <canvas id="particles"></canvas>
+
+  <!-- CURSOR -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-bar"></div>
+      <span class="loader-text mono">Initializing...</span>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="mono accent">MA</span><span class="logo-dot">.</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#work" class="nav-link">Work</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn-hire">Hire Me</a>
+    <button class="hamburger" id="hamburger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#skills" class="mob-link">Skills</a></li>
+      <li><a href="#work" class="mob-link">Work</a></li>
+      <li><a href="#services" class="mob-link">Services</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-glow glow-1"></div>
+    <div class="hero-bg-glow glow-2"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow mono reveal-up"><span class="accent">&#x25CF;</span> Available for freelance</p>
+      <h1 class="hero-title reveal-up">
+        Crafting<br>
+        <span class="typed-wrapper">
+          <span class="typed-text" id="typedText"></span><span class="typed-cursor">|</span>
+        </span><br>
+        Experiences
+      </h1>
+      <p class="hero-subtitle reveal-up">
+        Muhammad Aiman — Qori & Web Designer based in Indonesia — turning complex problems into intuitive, beautiful digital products.
+      </p>
+      <div class="hero-cta reveal-up">
+        <a href="#work" class="btn-primary">View My Work <span class="arrow">→</span></a>
+        <a href="#about" class="btn-ghost">About Me</a>
+      </div>
+      <div class="hero-stats reveal-up">
+        <div class="stat">
+          <span class="stat-num" data-target="80">0</span><span class="accent">+</span>
+          <span class="stat-label mono">Projects Done</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="5">0</span><span class="accent">+</span>
+          <span class="stat-label mono">Years Exp.</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="40">0</span><span class="accent">+</span>
+          <span class="stat-label mono">Happy Clients</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual reveal-right">
+      <div class="hero-card">
+        <div class="card-glow"></div>
+        <div class="card-avatar">
+          <div class="avatar-ring"></div>      
+          <div class="avatar-core" style="overflow:hidden;padding:0;">
+  <img src="assets/profil.jpeg" alt="MA" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+</div>
+        </div>
+        <div class="card-badge">
+          <span class="badge-dot pulse"></span>
+          <span class="mono">Open to work</span>
+        </div>
+        <div class="card-tags">
+          <span class="tag">Canva</span>
+          <span class="tag">Figma</span>
+          <span class="tag">UX Research</span>
+          <span class="tag">Prototyping</span>
+        </div>
+        <div class="floating-el el-1 mono">&lt;design /&gt;</div>
+        <div class="floating-el el-2 mono">{ ux: true }</div>
+        <div class="floating-el el-3">✦</div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span class="mono">Scroll</span>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>UI Design</span><span class="accent">✦</span>
+      <span>UX Research</span><span class="accent">✦</span>
+      <span>Web Development</span><span class="accent">✦</span>
+      <span>Prototyping</span><span class="accent">✦</span>
+      <span>Branding</span><span class="accent">✦</span>
+      <span>Motion Design</span><span class="accent">✦</span>
+      <span>Canva</span><span class="accent">✦</span>
+      <span>User Testing</span><span class="accent">✦</span>
+      <span>UI Design</span><span class="accent">✦</span>
+      <span>UX Research</span><span class="accent">✦</span>
+      <span>Web Development</span><span class="accent">✦</span>
+      <span>Prototyping</span><span class="accent">✦</span>
+      <span>Branding</span><span class="accent">✦</span>
+      <span>Motion Design</span><span class="accent">✦</span>
+      <span>Figma</span><span class="accent">✦</span>
+      <span>User Testing</span><span class="accent">✦</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal-left">
+          <div class="about-img-wrap">
+            <div class="about-img-placeholder">
+             <img src="assets/profil.jpeg" alt="Muhammad Aiman" style="width:100%;height:100%;object-fit:cover;border-radius:20px;">
+              <div class="img-ring ring-a"></div>
+              <div class="img-ring ring-b"></div>
+            </div>
+            <div class="about-exp-badge">
+              <span class="exp-num accent">5+</span>
+              <span class="exp-label mono">Years of<br>Experience</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal-right">
+          <p class="section-eyebrow mono"><span class="accent">//</span> About Me</p>
+          <h2 class="section-title">Design that speaks <span class="accent">before</span> words do</h2>
+          <p class="about-desc">
+            I'm a passionate UI/UX & Web Designer with over 5 years of experience creating meaningful digital experiences. I believe great design is invisible — it guides users effortlessly toward their goals without friction.
+          </p>
+          <p class="about-desc">
+            My process blends deep user research, systematic design thinking, and pixel-perfect execution. From wireframes to high-fidelity prototypes, every detail is intentional.
+          </p>
+          <div class="about-list">
+            <div class="about-item">
+              <span class="item-icon accent">▸</span>
+              <span>User-centered design philosophy</span>
+            </div>
+            <div class="about-item">
+              <span class="item-icon accent">▸</span>
+              <span>Data-driven UX decisions</span>
+            </div>
+            <div class="about-item">
+              <span class="item-icon accent">▸</span>
+              <span>Cross-functional team collaboration</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn-primary mt">Let's Talk <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-eyebrow mono"><span class="accent">//</span> My Skills</p>
+        <h2 class="section-title">Tools & <span class="accent">Expertise</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal-up" data-delay="0">
+          <div class="skill-icon">🎨</div>
+          <h3>UI Design</h3>
+          <p>Figma, Adobe XD, Sketch — crafting visually stunning interfaces.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="95"></div>
+          </div>
+          <span class="skill-pct mono accent">95%</span>
+        </div>
+        <div class="skill-card reveal-up" data-delay="100">
+          <div class="skill-icon">🔍</div>
+          <h3>UX Research</h3>
+          <p>User interviews, usability testing, heuristic evaluations.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="88"></div>
+          </div>
+          <span class="skill-pct mono accent">88%</span>
+        </div>
+        <div class="skill-card reveal-up" data-delay="200">
+          <div class="skill-icon">⚡</div>
+          <h3>Web Development</h3>
+          <p>HTML, CSS, JavaScript, React — bridging design and code.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="80"></div>
+          </div>
+          <span class="skill-pct mono accent">80%</span>
+        </div>
+        <div class="skill-card reveal-up" data-delay="300">
+          <div class="skill-icon">📱</div>
+          <h3>Prototyping</h3>
+          <p>Interactive prototypes that feel like real products.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="92"></div>
+          </div>
+          <span class="skill-pct mono accent">92%</span>
+        </div>
+        <div class="skill-card reveal-up" data-delay="400">
+          <div class="skill-icon">🚀</div>
+          <h3>Design Systems</h3>
+          <p>Scalable, consistent component libraries and style guides.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="85"></div>
+          </div>
+          <span class="skill-pct mono accent">85%</span>
+        </div>
+        <div class="skill-card reveal-up" data-delay="500">
+          <div class="skill-icon">✨</div>
+          <h3>Motion Design</h3>
+          <p>Micro-interactions and animations that delight users.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="78"></div>
+          </div>
+          <span class="skill-pct mono accent">78%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK / PROJECTS -->
+  <section class="section work" id="work">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-eyebrow mono"><span class="accent">//</span> Portfolio</p>
+        <h2 class="section-title">Selected <span class="accent">Work</span></h2>
+      </div>
+      <div class="work-filter reveal-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ui">UI Design</button>
+        <button class="filter-btn" data-filter="ux">UX Research</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+      </div>
+      <div class="work-grid">
+        <div class="work-card reveal-up" data-cat="ui" data-delay="0">
+          <div class="work-img" style="background: linear-gradient(135deg,#00d4ff22,#7b2ff722)">
+            <div class="work-img-placeholder">
+              <span class="work-num mono">01</span>
+            </div>
+            <div class="work-overlay">
+              <a href="#" class="work-btn">View Case Study →</a>
+            </div>
+          </div>
+          <div class="work-meta">
+            <span class="work-tag mono">UI Design</span>
+            <h3 class="work-title">FinTech Dashboard</h3>
+            <p class="work-desc">Complete redesign of a fintech app dashboard increasing user retention by 42%.</p>
+          </div>
+        </div>
+        <div class="work-card reveal-up" data-cat="ux" data-delay="150">
+          <div class="work-img" style="background: linear-gradient(135deg,#ff6b6b22,#ff8e5322)">
+            <div class="work-img-placeholder">
+              <span class="work-num mono">02</span>
+            </div>
+            <div class="work-overlay">
+              <a href="#" class="work-btn">View Case Study →</a>
+            </div>
+          </div>
+          <div class="work-meta">
+            <span class="work-tag mono">UX Research</span>
+            <h3 class="work-title">E-commerce UX Audit</h3>
+            <p class="work-desc">Comprehensive UX audit revealing 15 critical friction points, boosting conversion 28%.</p>
+          </div>
+        </div>
+        <div class="work-card reveal-up" data-cat="web" data-delay="300">
+          <div class="work-img" style="background: linear-gradient(135deg,#00ff9522,#00d4ff22)">
+            <div class="work-img-placeholder">
+              <span class="work-num mono">03</span>
+            </div>
+            <div class="work-overlay">
+              <a href="#" class="work-btn">View Case Study →</a>
+            </div>
+          </div>
+          <div class="work-meta">
+            <span class="work-tag mono">Web Dev</span>
+            <h3 class="work-title">SaaS Landing Page</h3>
+            <p class="work-desc">High-converting SaaS landing page with animated components and seamless UX.</p>
+          </div>
+        </div>
+        <div class="work-card reveal-up" data-cat="ui" data-delay="450">
+          <div class="work-img" style="background: linear-gradient(135deg,#a855f722,#ec489922)">
+            <div class="work-img-placeholder">
+              <span class="work-num mono">04</span>
+            </div>
+            <div class="work-overlay">
+              <a href="#" class="work-btn">View Case Study →</a>
+            </div>
+          </div>
+          <div class="work-meta">
+            <span class="work-tag mono">UI Design</span>
+            <h3 class="work-title">Mobile App Design</h3>
+            <p class="work-desc">Health & wellness app UI with calm aesthetics and accessible design patterns.</p>
+          </div>
+        </div>
+        <div class="work-card reveal-up" data-cat="ux" data-delay="600">
+          <div class="work-img" style="background: linear-gradient(135deg,#fbbf2422,#f5952522)">
+            <div class="work-img-placeholder">
+              <span class="work-num mono">05</span>
+            </div>
+            <div class="work-overlay">
+              <a href="#" class="work-btn">View Case Study →</a>
+            </div>
+          </div>
+          <div class="work-meta">
+            <span class="work-tag mono">UX Research</span>
+            <h3 class="work-title">EdTech Platform</h3>
+            <p class="work-desc">User journey mapping and information architecture for an online learning platform.</p>
+          </div>
+        </div>
+        <div class="work-card reveal-up" data-cat="web" data-delay="750">
+          <div class="work-img" style="background: linear-gradient(135deg,#10b98122,#06b6d422)">
+            <div class="work-img-placeholder">
+              <span class="work-num mono">06</span>
+            </div>
+            <div class="work-overlay">
+              <a href="#" class="work-btn">View Case Study →</a>
+            </div>
+          </div>
+          <div class="work-meta">
+            <span class="work-tag mono">Web Dev</span>
+            <h3 class="work-title">Portfolio Template</h3>
+            <p class="work-desc">Animated portfolio system built with React and Framer Motion for creatives.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-eyebrow mono"><span class="accent">//</span> What I Do</p>
+        <h2 class="section-title">Services <span class="accent">Offered</span></h2>
+      </div>
+      <div class="services-list">
+        <div class="service-item reveal-up" data-delay="0">
+          <div class="service-num mono accent">01</div>
+          <div class="service-body">
+            <h3>UI/UX Design</h3>
+            <p>End-to-end product design from discovery and wireframes to pixel-perfect high-fidelity mockups. Every design decision backed by user research and business goals.</p>
+          </div>
+          <div class="service-arrow">→</div>
+        </div>
+        <div class="service-item reveal-up" data-delay="100">
+          <div class="service-num mono accent">02</div>
+          <div class="service-body">
+            <h3>Web Design & Development</h3>
+            <p>Responsive, fast, and accessible websites that convert visitors into customers. Clean semantic code meets stunning visuals.</p>
+          </div>
+          <div class="service-arrow">→</div>
+        </div>
+        <div class="service-item reveal-up" data-delay="200">
+          <div class="service-num mono accent">03</div>
+          <div class="service-body">
+            <h3>Design System Creation</h3>
+            <p>Scalable component libraries and design tokens that keep your product consistent and your team moving fast.</p>
+          </div>
+          <div class="service-arrow">→</div>
+        </div>
+        <div class="service-item reveal-up" data-delay="300">
+          <div class="service-num mono accent">04</div>
+          <div class="service-body">
+            <h3>UX Audit & Consulting</h3>
+            <p>Identify usability issues, conversion bottlenecks, and quick wins across your existing digital product.</p>
+          </div>
+          <div class="service-arrow">→</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-eyebrow mono"><span class="accent">//</span> Testimonials</p>
+        <h2 class="section-title">What Clients <span class="accent">Say</span></h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card reveal-up" data-delay="0">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Aiman transformed our product completely. The new design increased our DAU by 60% in just two months. Absolutely exceptional work."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">JD</div>
+            <div>
+              <strong>James Dorsey</strong>
+              <span class="mono">CEO, FinFlow</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal-up" data-delay="150">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"The UX audit alone saved us months of guesswork. Clear, actionable insights delivered with professionalism. Will hire again."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">SR</div>
+            <div>
+              <strong>Sari Rahmawati</strong>
+              <span class="mono">Product Lead, Tokohub</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal-up" data-delay="300">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Delivered a stunning landing page ahead of schedule. The animations and micro-interactions are exactly what we envisioned. 10/10."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">MK</div>
+            <div>
+              <strong>Michael Kurniawan</strong>
+              <span class="mono">Founder, LaunchKit</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-wrap reveal-up">
+        <div class="contact-glow"></div>
+        <p class="section-eyebrow mono"><span class="accent">//</span> Contact</p>
+        <h2 class="contact-title">Let's build something <span class="accent">great</span> together</h2>
+        <p class="contact-sub">Have a project in mind? I'm currently available for freelance work and full-time opportunities.</p>
+        <div class="contact-links">
+          <a href="mailto:muhammadaimanaiman846@example.com" class="contact-link">
+            <span class="cl-icon">✉</span>
+            <span>muhammadaimanaiman846@gmail.com</span>
+          </a>
+          <a href="https://wa.me/6282254385633" class="contact-link">
+            <span class="cl-icon">📱</span>
+            <span>WhatsApp</span>
+          </a>
+          <a href="https://linkedin.com" class="contact-link">
+            <span class="cl-icon">in</span>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="mono" for="name">Name</label>
+              <input type="text" id="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label class="mono" for="email">Email</label>
+              <input type="email" id="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="mono" for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Project type / Collaboration" required />
+          </div>
+          <div class="form-group">
+            <label class="mono" for="msg">Message</label>
+            <textarea id="msg" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full">Send Message <span class="arrow">→</span></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="mono accent">MA</span><span class="logo-dot">.</span>
+      </div>
+      <p class="mono footer-copy">© 2025 Muhammad Aiman. Crafted with ❤️ & lots of ☕</p>
+      <div class="footer-socials">
+        <a href="#" class="soc-link">Dribbble</a>
+        <a href="#" class="soc-link">Behance</a>
+        <a href="#" class="soc-link">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
