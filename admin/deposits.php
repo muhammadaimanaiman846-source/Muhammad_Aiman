@@ -1,0 +1,1 @@
+<?php require '../config/database.php';role('admin');$title='Setoran';require '../includes/verify-page.php';
